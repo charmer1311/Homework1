@@ -6,10 +6,14 @@
 body {
     font-family: "Montserrat", sans-serif;
 
+
 }
 
 .top {
-    background: rgb(225, 255, 143);
+    height: 800px;
+    background: url(img/bigstar.svg), url(img/star5.svg), url(img/star4.svg), url(img/star2.svg), url(img/star3.svg) rgb(225, 255, 143) right;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 100%, 948px 538px, 1013px 568px, 63px 94px, 156px 69px;
 
     &__title {
         width: 769px;
@@ -49,6 +53,10 @@ body {
         line-height: 141.69%;
         text-align: center;
         color: rgb(255, 255, 255);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
 
         &:hover {
             background-color: rgb(255, 255, 255);
@@ -63,19 +71,19 @@ a {
 }
 
 .games {
-    &__about {
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-    }
+
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
 
     &__box {
         display: flex;
         flex-wrap: wrap;
         column-gap: 32px;
         justify-content: flex-start;
-        // margin-left: 119px;
-        // margin-right: 123px;
+        margin-left: 119px;
+        margin-right: 123px;
 
     }
 
@@ -103,7 +111,7 @@ a {
         padding-top: 94px;
         margin-left: 119px;
 
-        &_litle {
+        &__litle {
             font-family: inherit;
             color: black;
             font-size: 32px;
@@ -134,12 +142,21 @@ a {
 
     &__img {
         border-radius: 30px;
+
+
     }
 
     &__game {
         background-color: white;
         width: 378px;
+        height: 473px;
         border-radius: 30px;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
 
         &_1 {
             height: 473px;

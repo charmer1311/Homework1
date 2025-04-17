@@ -8,7 +8,10 @@ body {
 }
 
 .top {
-  background: rgb(225, 255, 143);
+  height: 800px;
+  background: url(img/bigstar.svg), url(img/star5.svg), url(img/star4.svg), url(img/star2.svg), url(img/star3.svg) rgb(225, 255, 143) right;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 100%, 948px 538px, 1013px 568px, 63px 94px, 156px 69px;
 }
 .top__title {
   width: 769px;
@@ -46,6 +49,10 @@ body {
   line-height: 141.69%;
   text-align: center;
   color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
 }
 .top__button:hover {
   background-color: rgb(255, 255, 255);
@@ -57,7 +64,7 @@ a {
   display: block;
 }
 
-.games__about {
+.games {
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -68,6 +75,8 @@ a {
   -moz-column-gap: 32px;
        column-gap: 32px;
   justify-content: flex-start;
+  margin-left: 119px;
+  margin-right: 123px;
 }
 .games__item {
   color: rgb(32, 32, 39);
@@ -91,7 +100,7 @@ a {
   padding-top: 94px;
   margin-left: 119px;
 }
-.games__title_litle {
+.games__title__litle {
   font-family: inherit;
   color: black;
   font-size: 32px;
@@ -121,7 +130,12 @@ a {
 .games__game {
   background-color: white;
   width: 378px;
+  height: 473px;
   border-radius: 30px;
+  transition: 1s;
+}
+.games__game:hover {
+  transform: scale(1.1);
 }
 .games__game_1 {
   height: 473px;
