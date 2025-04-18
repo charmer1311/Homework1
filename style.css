@@ -65,6 +65,9 @@ a {
 }
 
 .games {
+  background: url(img/star12.svg), url(img/star1.svg), url(img/star11.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 40px 822px, 933px 77px, 25px 770px;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -77,6 +80,7 @@ a {
   justify-content: flex-start;
   margin-left: 119px;
   margin-right: 123px;
+  margin-bottom: 50px;
 }
 .games__item {
   color: rgb(32, 32, 39);
