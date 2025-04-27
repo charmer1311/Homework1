@@ -8,7 +8,8 @@ body {
 }
 
 .center {
-  padding-left: 120px;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .top {
@@ -160,6 +161,29 @@ a {
 }
 .games__link {
   text-decoration: none;
+}
+
+.games-mini {
+  background-color: black;
+}
+.games-mini__title {
+  color: #ffffff;
+  margin-top: 96px;
+  padding-bottom: 72px;
+}
+
+.footer {
+  height: 150px;
+  background-color: rgb(189, 237, 53);
+}
+.footer__title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  padding-top: 60px;
+  text-align: center;
+  color: black;
 }
 
 @media (max-width: 767px) {
