@@ -7,6 +7,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 .top {
   height: 800px;
   background: url(img/bigstar.svg), url(img/star5.svg), url(img/star4.svg), url(img/star2.svg), url(img/star3.svg) rgb(225, 255, 143) right;
@@ -21,7 +26,6 @@ body {
   line-height: 78px;
   text-align: left;
   padding-top: 196px;
-  margin-left: 120px;
 }
 .top__description {
   width: 720px;
@@ -31,11 +35,9 @@ body {
   line-height: 32px;
   text-align: left;
   margin-top: 24px;
-  margin-left: 120px;
 }
 .top__button {
   margin-top: 48px;
-  margin-left: 120px;
   margin-bottom: 246px;
   width: 247px;
   height: 66px;
@@ -48,6 +50,7 @@ body {
   font-weight: 600;
   line-height: 141.69%;
   text-align: center;
+  text-decoration-line: none;
   color: rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
@@ -78,8 +81,6 @@ a {
   -moz-column-gap: 32px;
        column-gap: 32px;
   justify-content: flex-start;
-  margin-left: 119px;
-  margin-right: 123px;
   margin-bottom: 50px;
 }
 .games__item {
@@ -102,7 +103,6 @@ a {
   line-height: 78px;
   text-align: left;
   padding-top: 94px;
-  margin-left: 119px;
 }
 .games__title__litle {
   font-family: inherit;
@@ -124,7 +124,6 @@ a {
   text-align: left;
   padding-top: 24px;
   padding-bottom: 72px;
-  margin-left: 119px;
   width: 788px;
   height: 96px;
 }
@@ -162,4 +161,65 @@ a {
 }
 .games__link {
   text-decoration: none;
+}
+
+.games-mini {
+  background-color: black;
+}
+.games-mini__title {
+  color: #ffffff;
+  margin-top: 96px;
+  padding-bottom: 72px;
+}
+
+.footer {
+  height: 150px;
+  background-color: rgb(189, 237, 53);
+}
+.footer__title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  padding-top: 60px;
+  text-align: center;
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    background: url(img/vectormobile.svg), url(img/starmobile2.svg), url(img/starmobile3.svg), url(img/starmobile4.svg), url(img/starmobile5.svg), rgb(225, 255, 143) right;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 100% 0, 37px 97px, 91px 64px, 303px 580px, 272px 557px;
+  }
+  .top__title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 100%;
+    height: auto;
+    padding-top: 147px;
+    max-width: 262px;
+    margin-left: 57px;
+    height: 196px;
+  }
+  .top__description {
+    text-align: center;
+    line-height: 100%;
+    font-size: 16px;
+    margin-top: 24px;
+    margin-left: 40px;
+    max-width: 296px;
+  }
+  .top__button {
+    margin-left: 46px;
+    margin-top: 36px;
+    margin-bottom: 182px;
+  }
+  .games {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
