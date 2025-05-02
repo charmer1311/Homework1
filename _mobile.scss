@@ -1,7 +1,7 @@
 @media (max-width: 767px) {
     .center {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
     }
 
     .top {
@@ -134,4 +134,11 @@
         }
     }
 
+}
+
+@media (hover: none) {
+    a:hover {
+        /* Отключаем hover-эффекты для ссылок */
+        background-color: transparent;
+    }
 }
