@@ -1,0 +1,122 @@
+    @media (max-width: 1024px) {
+        .center {
+            padding-left: calc(50% - 393px);
+            padding-right: calc(50% - 393px);
+        }
+
+        .top {
+            &__title {
+                font-size: 48px;
+                line-height: 100%;
+            }
+
+            &__description {
+                font-size: 20px;
+                width: 520px;
+            }
+        }
+
+        .games {
+            display: none;
+        }
+
+        .games-mini {
+            &__game {
+                height: 528.63px;
+                width: 343px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                &_2 {
+                    height: 567px;
+
+                }
+
+                &_3 {
+                    height: 567px;
+                }
+
+                &_4 {
+                    height: 528px;
+                }
+
+                &_5 {
+                    height: 606px;
+                }
+
+                &_6 {
+                    height: 626px;
+                }
+
+            }
+
+            &__title {
+                font-size: 40px;
+            }
+
+            &__box {
+                gap: 24px;
+                padding-bottom: 48px;
+            }
+
+            &__flex {
+                display: flex;
+                padding: 29px;
+                width: 285px;
+                height: 182px;
+            }
+
+            &__header {
+                font-size: 32px;
+            }
+
+            &__description {
+                font-size: 16px;
+                line-height: 100%;
+
+                &_1 {
+                    width: 275px;
+                }
+
+                &_2 {
+                    width: 283px;
+                }
+            }
+
+            &__button {
+                font-size: 16px;
+                width: 285px;
+                height: 55px;
+                padding: 32px;
+                margin-top: 32px;
+            }
+
+            &__img {
+                display: none;
+            }
+
+            &__mobile {
+                display: block;
+            }
+
+        }
+
+        .footer {
+            height: 100px;
+
+            &__title {
+                font-size: 16px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+
+    }
+
+    @media (min-width: 768px) and (max-width: 833px) {
+        .center {
+            padding-left: calc(50% - 216px);
+            padding-right: calc(50% - 216px);
+        }
+    }

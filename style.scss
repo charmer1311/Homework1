@@ -80,7 +80,6 @@ a {
     background: url(img/star12.svg), url(img/star1.svg), url(img/star11.svg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 40px 822px, top 77px right 0px, 25px 770px;
-
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -199,6 +198,9 @@ a {
 }
 
 .games-mini {
+    background: url(img/starminigame1.svg), url(img/starminigame2.svg), url(img/starminigame3.svg), url(img/starminigame4.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top 93px right 123px, top 126px right 44px, top 3366px right 52px, top 3414px right 150px;
     background-color: black;
 
     &__title {
@@ -247,9 +249,11 @@ a {
         line-height: 32px;
         color: black;
         padding-top: 24px;
+
         &_1 {
             width: 457px;
         }
+
         &_2 {
             width: 497px;
         }
@@ -300,4 +304,5 @@ a {
 }
 
 
-@import 'mobile'
+@import 'tablet';
+@import 'mobile';
