@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -360,13 +364,14 @@ a {
     background-position: 100% 0, 37px 97px, 91px 64px, 303px 580px, 272px 557px;
   }
   .top__title {
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 40px;
     line-height: 100%;
     height: auto;
     padding-top: 147px;
     max-width: 262px;
-    margin-left: 57px;
     height: 196px;
   }
   .top__description {
@@ -374,7 +379,6 @@ a {
     line-height: 100%;
     font-size: 16px;
     margin-top: 24px;
-    margin-left: 40px;
     max-width: 296px;
   }
   .top__button {
