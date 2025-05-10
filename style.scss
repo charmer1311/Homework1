@@ -113,6 +113,19 @@ a {
 
     }
 
+    &__title-litle {
+        font-family: inherit;
+        color: black;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: left;
+        padding-top: 26px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 36px;
+    }
+
     &__title {
         color: white;
         font-size: 64px;
@@ -121,33 +134,18 @@ a {
         text-align: left;
         padding-top: 94px;
 
+    }
 
-        &__litle {
-            font-family: inherit;
-            color: black;
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 39px;
-            text-align: left;
-            padding-top: 26px;
-            padding-left: 32px;
-            padding-right: 32px;
-            padding-bottom: 36px;
-        }
-
-
-
-        &__description {
-            color: white;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 32px;
-            text-align: left;
-            padding-top: 24px;
-            padding-bottom: 72px;
-            width: 788px;
-            height: 96px;
-        }
+    &__title-description {
+        color: white;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        padding-top: 24px;
+        padding-bottom: 72px;
+        width: 788px;
+        height: 96px;
     }
 
     &__img {

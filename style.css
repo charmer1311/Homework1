@@ -101,15 +101,7 @@ a {
   padding-right: 32px;
   padding-top: 36px;
 }
-.games__title {
-  color: white;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 78px;
-  text-align: left;
-  padding-top: 94px;
-}
-.games__title__litle {
+.games__title-litle {
   font-family: inherit;
   color: black;
   font-size: 32px;
@@ -121,7 +113,15 @@ a {
   padding-right: 32px;
   padding-bottom: 36px;
 }
-.games__title__description {
+.games__title {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  padding-top: 94px;
+}
+.games__title-description {
   color: white;
   font-size: 24px;
   font-weight: 400;
@@ -305,6 +305,7 @@ a {
   .games-mini__box {
     gap: 24px;
     padding-bottom: 48px;
+    align-items: center;
   }
   .games-mini__flex {
     display: flex;
