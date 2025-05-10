@@ -24,7 +24,7 @@ if (d > 100 || e > 100) {
     console.log('Неверно');
 }
 
-// Задание 4
+// Задание 4 - доработка домашки
 let a = '2';
 let b = '3';
 console.log(Number(a) + Number(b));
