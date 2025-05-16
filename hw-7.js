@@ -7,7 +7,7 @@ function min(a, b) {
         return b;
     }
 }
-let result = min(8, 4);
+let result3 = min(8, 4);
 let double = min(6, 6);
 console.log(result);
 console.log(double);
@@ -23,7 +23,7 @@ if (oddEven(number)) {
 } else {
     console.log(`Число нечетное`);
 }
-Задание 3
+// Задание 3
 const square = (s) => s * s;
 console.log(square(10));
 
