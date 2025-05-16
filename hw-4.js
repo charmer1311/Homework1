@@ -3,11 +3,11 @@ let a = 20;
 alert(a);
 
 // Задание 2
-let year = 2007;
+const year = 2007;
 alert(year);
 
 // Задание 3
-let name = 'Brendan Eich';
+const name = 'Brendan Eich';
 alert(name);
 
 // Задание 4
@@ -51,7 +51,7 @@ const user = {
 };
 
 //Задание 10
-const firstName = prompt('Как вас зовут?');
+let firstName = prompt('Как вас зовут?');
 alert(`Привет ${firstName}!`);
 
 
