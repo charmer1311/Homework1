@@ -101,6 +101,11 @@ if (clientOS === 0) {
     alert('Вввели что-то не то')
 }
 
+for (let n = 1000; n < 50;  n /= 2) {
+    console.log(n);}
+
+
+
 
 
 
