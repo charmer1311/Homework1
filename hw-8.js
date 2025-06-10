@@ -58,13 +58,13 @@
 //     alert('Не угадал');
 // }
 
-// Задание 8
-let letters = 'abcdef';
-letters = letters.split('');
-console.log(letters);
-letters.reverse();
-letters = letters.join('');
-console.log(letters);
+// // Задание 8
+// let letters = 'abcdef';
+// letters = letters.split('');
+// console.log(letters);
+// letters.reverse();
+// letters = letters.join('');
+// console.log(letters);
 
 // // Задание 9
 // const numberArr = [[1, 2, 3], [4, 5, 6]];
@@ -134,6 +134,9 @@ console.log(letters);
 // }
 // console.log(empty1);
 // console.log(empty1.reduce((a, b) => a + b) / empty1.length);
+
+// 
+
 
 
 

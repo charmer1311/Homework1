@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Задание 1 </h1>
+    <h1 class="paragraph">Lorem ipsum dolor. Fugit!</h1>
+    <button class="btn">Скрыть</button>
+
+
+    <h1>Задание 2 </h1>
+    <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+    <button class="buttoncolor">Изменить цвет</button>
+
+    <h1>Задание 3 </h1>
+    <h1 class="hello">Lorem, ipsum. </h1>
+    <button class="button-hello">Изменить текст</button>
+
+
+    <h1>Задание 4 и 5 </h1>
+    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+    <p class="description">Lorem ipsum dolor sit.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+
+    <h1>Задание 6 </h1>
+    <button class="btn1">Добавить элемент</button>
+
+
+    <h1>Задание 7</h1>
+    <p class="description1">Первый абзац</p>
+    <p class="description2">Второй абзац</p>
+    <p class="description1">Третий абзац</p>
+    <button class="btn2">Удалить элемент</button>
+
+</body>
+
+<script>
+    // Задание 1
+    const buttonEl = document.querySelector('.btn');
+    const paragraphEl = document.querySelector('.paragraph');
+
+    buttonEl.addEventListener('click', function (e) {
+
+        if (paragraphEl.style.display === 'none') {
+            paragraphEl.style.display = 'block';
+        } else {
+            paragraphEl.style.display = 'none';
+        }
+    });
+
+    // Задание 2
+    const pEl = document.querySelector('.p');
+    const buttoncolorEl = document.querySelector('.buttoncolor');
+
+    buttoncolorEl.addEventListener('click', function (e) {
+        pEl.style.color = 'blue';
+    });
+
+    // Задание 3
+    const helloEl = document.querySelector('.hello');
+    const buttonhelloEL = document.querySelector('.button-hello');
+
+    buttonhelloEL.addEventListener('click', () => {
+        helloEl.textContent = 'Привет, мир!';
+    })
+
+    // Задание 4,5
+
+    const descriptionEl = document.querySelectorAll('.description');
+    descriptionEl.forEach(description => {
+        description.textContent = 'Измененный текст';
+    })
+
+    // Задание 6
+    const btn1El = document.querySelector('.btn1');
+
+    btn1El.addEventListener('click', () => {
+        const newEl = document.createElement('p');
+        newEl.textContent = 'Новый абзац'
+        document.body.appendChild(newEl);
+
+    })
+
+    // Задание 7
+    const description1El = document.querySelector('.description1');
+    const btn2El = document.querySelector('.btn2');
+
+    btn2El.addEventListener('click', () => {
+
+        description1El.remove();
+
+    })
+
+
+
+</script>
+
+</html>

@@ -85,7 +85,7 @@ function game4() {
     ];
     let score = 0;
     for (let i = 0; i < quiz.length; i++) {
-        let quizQuest = Number(prompt(`Ввидите правильный ответ ${quiz[i].question} ${quiz[i].options}`));
+        let quizQuest = Number(prompt(`Введите правильный ответ ${quiz[i].question} ${quiz[i].options}`));
         if (quizQuest == quiz[i][`correctAnswer`]) {
             score++;
             alert('Верно');
@@ -98,6 +98,35 @@ function game4() {
     alert(`Вы ответили верно на ${score} вопроса`);
 
 }
+// Игра - 5 Викторина
+function game5() {
+    const choice = ["камень", "ножницы", "бумага"];
+    let quest = prompt(`Введите выбор ${choice}`);
+    const choiceRandom = choice[Math.floor(Math.random() * choice.length)];
+    alert(`Выбор компьтера ${choiceRandom}`);
+    let result;
+    if (quest === choiceRandom) {
+        result = "Ничья";
+    } else if (
+        (quest === "камень" && choiceRandom === "ножницы") ||
+        (quest === "ножницы" && choiceRandom === "бумага") ||
+        (quest === "бумага" && choiceRandom === "камень")
+    ) {
+        result = "Победа";
+
+    } else {
+        result = "Поражение"
+
+    }
+    alert(`Ваш выбор - ${quest} \nВыбор компьтера - ${choiceRandom} \nРезультат -  ${result}`)
+};
+
+
+
+
+
+
+
 
 
 

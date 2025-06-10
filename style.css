@@ -18,7 +18,7 @@ body {
 }
 
 .top {
-  height: 800px;
+  height: 710px;
   background: url(img/bigstar.svg), url(img/star5.svg), url(img/star4.svg), url(img/star2.svg), url(img/star3.svg) rgb(225, 255, 143) right;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 100%, 948px 538px, 1013px 568px, 63px 94px, 156px 69px;
@@ -70,6 +70,15 @@ body {
 
 a {
   display: block;
+}
+
+.animation-strip {
+  height: 90px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
 }
 
 .games {
@@ -242,6 +251,11 @@ a {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
+}
+.games-mini__button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
 }
 .games-mini__mobile {
   display: none;
