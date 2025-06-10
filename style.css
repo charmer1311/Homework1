@@ -73,12 +73,49 @@ a {
 }
 
 .animation-strip {
+  align-content: center;
   height: 90px;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   background: rgb(188, 236, 48);
+}
+
+.animation-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.animation-strip {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.animation-container {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  animation: 25s linear infinite scrollLeft;
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+.animation-item {
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .games {
@@ -403,6 +440,9 @@ a {
   }
   .games {
     display: none;
+  }
+  .animation-strip {
+    width: 100%;
   }
   .games-mini__game {
     height: 528.63px;
