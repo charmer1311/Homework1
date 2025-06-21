@@ -22,21 +22,38 @@
         <a href="#game" class="top__button">Поехали!</a>
     </div>
     <div class="animation-strip">
-        <!-- <div class="animation-container">
-                <div class="animation-item">Викторина</div>
-                <div img 
-                <div class="animation-item">угадай число</div>
-                <div class="animation-item">Переверни текст</div>
-                <div class="animation-item">Простая арифметика</div>
-                <div class="animation-item">Камень, ножницы, бумага</div>
-                <div class="animation-item">Генератор случайных цветов</div>
-            </div> -->
+        <div class="animation-container">
+            <div class="animation-item">Викторина</div>
+            <img src="img/starani.svg" alt="star">
+            <div class="animation-item">Угодай число</div>
+            <img src="img/starani.svg" alt="star">
+            <div class="animation-item">Переверни текст</div>
+            <img src="img/starani.svg" alt="star">
+            <div class="animation-item">Простая арифметика</div>
+            <img src="img/starani.svg" alt="star">
+            <div class="animation-item">Камень, ножницы, бумага</div>
+            <img src="img/starani.svg" alt="star">
+            <div class="animation-item">Генератор случайных цветов</div>
+            <img src="img/starani.svg" alt="star">
+            <div class="animation-item">Викторина</div>
+            <img src="img/starani.svg" alt="star">
+            <div class="animation-item">Угодай число</div>
+            <img src="img/starani.svg" alt="star">
+            <div class="animation-item">Переверни текст</div>
+            <img src="img/starani.svg" alt="star">
+            <div class="animation-item">Простая арифметика</div>
+            <img src="img/starani.svg" alt="star">
+            <div class="animation-item">Камень, ножницы, бумага</div>
+            <img src="img/starani.svg" alt="star">
+            <div class="animation-item">Генератор случайных цветов</div>
+            <img src="img/starani.svg" alt="star">
+        </div>
+
 
     </div>
 
     <div id="game" class="games center">
         <h1 class="games__title">Об играх</h1>
-        <!-- изменения в названии -->
         <p class="games__title-description">В моей коллекции представлено 6 игр на разные темы. <br> Игры несложные — в
             них
             может поиграть каждый. <br> Все игры доступны для пользования.</p>
@@ -710,7 +727,7 @@
                     <p class="games-mini__description">Сыграй в популярную игру <br> против компьютера.</p>
                     <button onclick="game5()" class="games-mini__button">Играть!</button>
                 </div>
-                <img class="games-mini__img" src="img/minigame5.svg" alt="minigame5">
+                <img class="games-mini__img" src="img/minigame5.jpg" alt="minigame5">
             </article>
             <article id="game6" class="games-mini__game games-mini__game_6">
                 <img class="games-mini__mobile" src="img/mobilegame6.svg" alt="mobilegame6">
@@ -730,7 +747,19 @@
         <h4 class="footer__title">Все права защищены.</h4>
     </div>
 
-    <script src="game1.js"></script>
+    <script src="game1.js">
+    </script>
+    <script>
+        const game6EL = document.querySelectorAll('.games-mini__button')[5];
+        const divEl = document.querySelector('.games-mini');
+
+        game6EL.addEventListener('click', function () {
+            const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            divEl.style.backgroundColor = "#" + randomColor;
+        });
+    </script>
+
+
 </body>
 
 </html>
